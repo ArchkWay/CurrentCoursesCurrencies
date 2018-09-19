@@ -6,9 +6,9 @@ import retrofit2.Retrofit;
 import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
 
 
-public class App extends Application {
+public class RetroApp extends Application {
 
-    private static CbAPI cbAPI;
+    private static CurService curService;
 
     @Override
     public void onCreate() {
@@ -19,10 +19,10 @@ public class App extends Application {
                 .addConverterFactory(SimpleXmlConverterFactory.create())
                 .build();
 
-        cbAPI = retrofit.create(CbAPI.class);
+        curService = retrofit.create(CurService.class);
     }
 
-    public static CbAPI getApi() {
-        return cbAPI;
+    public static CurService getCurService() {
+        return curService;
     }
 }

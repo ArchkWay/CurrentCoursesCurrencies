@@ -16,7 +16,7 @@ public class ValCurs
     private String name;
 
     @ElementList(inline = true)
-    private ArrayList<Valute> valute;
+    private ArrayList<ObjectResponse> objectResponses;
 
     public String getDate ()
     {
@@ -28,9 +28,9 @@ public class ValCurs
         return name;
     }
 
-    public ArrayList<Valute> getValute ()
+    public ArrayList<ObjectResponse> getCurrencies ()
     {
-        return valute;
+        return objectResponses;
     }
 
 
