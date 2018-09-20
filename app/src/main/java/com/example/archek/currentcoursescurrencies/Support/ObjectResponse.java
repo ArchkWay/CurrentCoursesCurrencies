@@ -6,8 +6,7 @@ import org.simpleframework.xml.Element;
 import org.simpleframework.xml.Root;
 
 @Root(name = "Valute")
-public class Valute
-{
+public class ObjectResponse{
     @Attribute(name="ID")
     private String id;
 
@@ -26,6 +25,14 @@ public class Valute
     @Element(name = "Value")
     private String value;
 
+    private boolean rise;
+    public boolean isRise() {
+        return rise;
+    }
+
+    public void setRise(boolean rise) {
+        this.rise = rise;
+    }
 
     public String getId()
     {
@@ -56,6 +63,8 @@ public class Valute
     {
         return value;
     }
+
+
 
 
 

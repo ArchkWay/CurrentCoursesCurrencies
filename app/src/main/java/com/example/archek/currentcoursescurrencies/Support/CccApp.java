@@ -6,7 +6,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.simplexml.SimpleXmlConverterFactory;
 
 
-public class RetroApp extends Application {
+public class CccApp extends Application {
 
     private static CurService curService;
 

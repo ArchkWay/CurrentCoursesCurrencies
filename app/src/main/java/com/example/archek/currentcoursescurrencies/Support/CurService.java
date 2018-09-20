@@ -6,9 +6,10 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 
-public interface CbAPI {
+public interface CurService {
 
     @GET("scripts/XML_daily_eng.asp")
-    Call<ValCurs> getData(@Query("date_req") String dateReg);
+    Call<ObjectListResponse> getData(@Query("date_req") String dateReg);
+
 
 }

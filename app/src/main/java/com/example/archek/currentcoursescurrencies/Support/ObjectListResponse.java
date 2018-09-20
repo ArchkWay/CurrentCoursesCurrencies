@@ -6,8 +6,7 @@ import org.simpleframework.xml.Root;
 
 import java.util.ArrayList;
 
-@Root(name = "ValCurs")
-public class ValCurs
+public class ObjectListResponse
 {
     @Attribute(name = "Date")
     private String date;
